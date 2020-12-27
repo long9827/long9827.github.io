@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr" class="client-nojs">
+<head>
+<title>标识符</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="shortcut icon" href="../../../common/favicon.ico">
+<link rel="stylesheet" href="../../../common/ext.css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="../../../common/site_modules.css">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_zh_:resourceloader:filter:minify-css:7:15cea3ec788a65b5187d4018eed543bf */</style>
+
+<script src="../../../common/startup_scripts.js"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/identifiers","wgTitle":"cpp/language/identifiers","wgCurRevisionId":67274,"wgArticleId":7784,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"cpp/language/identifiers","wgUserVariant":"zh","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"zh","language":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-MathJax":1,"gadget-ColiruCompiler":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_zh_:resourceloader:filter:minify-js:7:258d7cd6aa9aa67dee25e01fb6a9e505 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000dd;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #909090;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #008000; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #008000;}
+.cpp.source-cpp .nu0 {color: #000080;}
+.cpp.source-cpp .nu6 {color: #000080;}
+.cpp.source-cpp .nu8 {color: #000080;}
+.cpp.source-cpp .nu12 {color: #000080;}
+.cpp.source-cpp .nu16 {color:#000080;}
+.cpp.source-cpp .nu17 {color:#000080;}
+.cpp.source-cpp .nu18 {color:#000080;}
+.cpp.source-cpp .nu19 {color:#000080;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_language_identifiers skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        <!-- /header -->
+        <!-- content -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+<div id="bsap_1308987" class="bsarocks bsap_806b7512f50f84c15e2a20e379480845"></div>
+                <h1 id="firstHeading" class="firstHeading">标识符</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">来自cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../language.html" title="cpp/language">language</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language">语言</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header">标准库头文件</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> 自立与有宿主实现</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req">具名要求</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html#.E8.AF.AD.E8.A8.80.E6.94.AF.E6.8C.81" title="cpp/utility">语言支持库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts">概念库</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error">诊断库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility">工具库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string">字符串库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../container.html" title="cpp/container">容器库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../iterator.html" title="cpp/iterator">迭代器库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../ranges.html" title="cpp/ranges"> 范围库</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="cpp/algorithm">算法库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="cpp/numeric">数值库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="cpp/locale">本地化库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io">输入/输出库</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem">文件系统库</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex">正则表达式库</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic">原子操作库</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread">线程支持库</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental">技术规范</a> </td></tr>
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="cpp/language">C++ 语言</a></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="basic_concepts.html" title="cpp/language/basic concepts">基本概念</a><div class="t-navbar-menu"><div><div style="display:inline-block">
+<div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"> <a href="../keywords.html" title="cpp/keyword"> 语言关键词</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="translation_phases.html" title="cpp/language/translation phases"> 翻译阶段</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../comments.html" title="cpp/comment"> 注释</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="main_function.html" title="cpp/language/main function"> <code>main()</code> 函数</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <strong class="selflink"> 名字和标识符</strong> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="incomplete_type.html" title="cpp/language/type"> 类型</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="types.html" title="cpp/language/types"> 基础类型</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="object.html" title="cpp/language/object"> 对象</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="scope.html" title="cpp/language/scope"> 作用域</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="lifetime.html" title="cpp/language/lifetime"> 对象生存期</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="storage_duration.html" title="cpp/language/storage duration"> 存储期与连接</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="definition.html" title="cpp/language/definition"> 定义和单一定义规则（ODR）</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="lookup.html" title="cpp/language/lookup"> 名字查找</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="qualified_lookup.html" title="cpp/language/qualified lookup"> 有限定名字查找</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="unqualified_lookup.html" title="cpp/language/unqualified lookup"> 无限定名字查找</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="as_if.html" title="cpp/language/as if"> “如同”规则</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="ub.html" title="cpp/language/ub"> 未定义行为</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="memory_model.html" title="cpp/language/memory model"> 内存模型</a> </td></tr>
+</table></div>
+</div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
+<p><i>标识符</i>是一个由数字，下划线，大小写拉丁字母和大多数 Unicode 字符（见下文的详细说明）组成的任意长度的序列。有效的标识符必须以一个非数字字符（拉丁字母，下划线或 Unicode 非数字字符）开头。标识符区分大小写（小写和大写字母是不同的），而且每一个字符都是起作用的。
+</p><p>注意：C++ 的文法中形式上要求 Unicode 字符以 <code>\u</code> 或 <code>\U</code> 进行<a href="escape.html" title="cpp/language/escape">转义</a>，但根据<a href="translation_phases.html" title="cpp/language/translation phases">翻译阶段 1</a> ，这只不过是将源代码中的原始 Unicode 字符呈现给编译器的方式。还要注意的是，对这个功能特性的支持可能是有限的，比如 <a rel="nofollow" class="external text" href="https://gcc.gnu.org/wiki/FAQ#What_is_the_status_of_adding_the_UTF-8_support_for_identifier_names_in_GCC.3F">gcc</a>
+</p>
+<h3><span class="mw-headline" id=".E5.9C.A8.E5.A3.B0.E6.98.8E.E4.B8.AD">在声明中</span></h3>
+<p>可以用标识符来<a href="declarations.html" title="cpp/language/declarations">命名</a>对象、引用、函数、枚举项、类型、类成员、命名空间、模板、模板特化、形参包、goto 标号，以及其他实体，但有以下例外：
+</p>
+<ul><li> <a href="../keywords.html" title="cpp/keyword">关键词</a>标识符不能用于其他目的；
+<ul><li> 关键词只有在<span class="t-spar">属性记号</span>中可做他用。（例如 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span><span class="br0">[</span><span class="kw1">private</span><span class="br0">]</span><span class="br0">]</span></span></span> 是一个合法<a href="attributes.html" title="cpp/language/attributes">属性</a>）<span class="t-mark-rev t-since-cxx11">(C++11 起)</span>
+</li></ul>
+</li><li> 作为特定运算符与标点符的<a href="operator_alternative.html" title="cpp/language/operator alternative">代用表示</a>不能用于其他目的；
+</li></ul>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<ul><li> 拥有特殊含义的标识符（<span class="t-c"><span class="mw-geshi cpp source-cpp">final</span></span><span class="t-rev-inl t-since-cxx20"><span>，<span class="t-c"><span class="mw-geshi cpp source-cpp">import</span></span>，<span class="t-c"><span class="mw-geshi cpp source-cpp">module</span></span></span> <span><span class="t-mark-rev t-since-cxx20">(C++20 起)</span></span></span>和<span class="t-c"><span class="mw-geshi cpp source-cpp">override</span></span>）在特定语境不作为常规标识符使用，而是表达它们的特定含义；
+<ul><li> 在没有特别指明的情况下，这些标识符在既能作为常规标识符也能表达特定含义的场合均被视为常规标识符。
+</li></ul>
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></td></tr>
+</table>
+<ul><li> 其中任何位置带有双下划线的标识符都是被保留的；
+</li><li> 以一个下划线跟着一个大写字母开头的标识符是被保留的；
+</li><li> 以一个下划线开头的标识符在全局命名空间中是被保留的。
+</li></ul>
+<p>这里“被保留”的意思是，标准库的头文件可能 <code>#define</code> 或者声明这样的标识符以便其内部使用，编译器可能会预先定义这种非标准的标识符，而且名字重整算法可能会假定某些这样的标识符是没有被使用的。如果程序员使用了这样的标识符的话，其行为是未定义的。
+</p><p>此外，在一个翻译单元 <code>#define</code> 或 <code>#undef</code> 特定名字是未定义行为，详情请见<a href="../preprocessor/replace.html" title="cpp/preprocessor/replace">保留宏名</a>。
+</p>
+<h4><span class="mw-headline" id=".E5.83.B5.E5.B0.B8.E6.A0.87.E8.AF.86.E7.AC.A6">僵尸标识符</span></h4>
+<p>某些标识符只存在于以往的 C++ 标准，换而言之，它们已经被移除。但是在特定语境中，它们为兼容早期标准而被保留。
+</p>
+<table class="wikitable" style="text-align:center;">
+
+<tr>
+<th> 保留语境
+</th>
+<th> 类别/作为成员
+</th>
+<th> 名字
+</th></tr>
+<tr>
+<td rowspan="39"> 在命名空间 <span class="t-c"><span class="mw-geshi cpp source-cpp">std</span></span> 内保留
+</td>
+<td rowspan="2"> <a href="../memory.html" title="cpp/memory">智能指针</a>
+</td>
+<td><a href="../memory/auto_ptr.html" title="cpp/memory/auto ptr">auto_ptr</a>
+</td></tr>
+<tr>
+<td><a href="../memory/auto_ptr.html" title="cpp/memory/auto ptr">auto_ptr_ref</a>
+</td></tr>
+<tr>
+<td rowspan="23"> <a href="../utility/functional.html" title="cpp/utility/functional">函数对象工具</a>
+</td>
+<td><a href="../utility/functional/binary_function.html" title="cpp/utility/functional/binary function">binary_function</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/binary_negate.html" title="cpp/utility/functional/binary negate">binary_negate</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/bind12.html" title="cpp/utility/functional/bind12">bind1st</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/bind12.html" title="cpp/utility/functional/bind12">bind2nd</a>
+</td></tr>
+<tr>
+<td><a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/utility/functional/binder12&amp;action=edit&amp;redlink=1" class="new" title="cpp/utility/functional/binder12（页面不存在）">binder1st</a>
+</td></tr>
+<tr>
+<td><a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/utility/functional/binder12&amp;action=edit&amp;redlink=1" class="new" title="cpp/utility/functional/binder12（页面不存在）">binder2nd</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/mem_fun_ref_t.html" title="cpp/utility/functional/mem fun ref t">const_mem_fun1_ref_t</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/mem_fun_t.html" title="cpp/utility/functional/mem fun t">const_mem_fun1_t</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/mem_fun_ref_t.html" title="cpp/utility/functional/mem fun ref t">const_mem_fun_ref_t</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/mem_fun_t.html" title="cpp/utility/functional/mem fun t">const_mem_fun_t</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/mem_fun_ref_t.html" title="cpp/utility/functional/mem fun ref t">mem_fun1_ref_t</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/mem_fun_t.html" title="cpp/utility/functional/mem fun t">mem_fun1_t</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/mem_fun_ref_t.html" title="cpp/utility/functional/mem fun ref t">mem_fun_ref_t</a>
+</td></tr>
+<tr>
+<td><a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/utility/functional/mem_fun_ref&amp;action=edit&amp;redlink=1" class="new" title="cpp/utility/functional/mem fun ref（页面不存在）">mem_fun_ref</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/mem_fun_t.html" title="cpp/utility/functional/mem fun t">mem_fun_t</a>
+</td></tr>
+<tr>
+<td><a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/utility/functional/mem_fun&amp;action=edit&amp;redlink=1" class="new" title="cpp/utility/functional/mem fun（页面不存在）">mem_fun</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/not1.html" title="cpp/utility/functional/not1">not1</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/not2.html" title="cpp/utility/functional/not2">not2</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/pointer_to_binary_function.html" title="cpp/utility/functional/pointer to binary function">pointer_to_binary_function</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/pointer_to_unary_function.html" title="cpp/utility/functional/pointer to unary function">pointer_to_unary_function</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/ptr_fun.html" title="cpp/utility/functional/ptr fun">ptr_fun</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/unary_function.html" title="cpp/utility/functional/unary function">unary_function</a>
+</td></tr>
+<tr>
+<td><a href="../utility/functional/unary_negate.html" title="cpp/utility/functional/unary negate">unary_negate</a>
+</td></tr>
+<tr>
+<td rowspan="3"> <a href="../memory.html" title="cpp/memory">未初始化存储</a>
+</td>
+<td><a href="../memory/get_temporary_buffer.html" title="cpp/memory/get temporary buffer">get_temporary_buffer</a>
+</td></tr>
+<tr>
+<td><a href="../memory/raw_storage_iterator.html" title="cpp/memory/raw storage iterator">raw_storage_iterator</a>
+</td></tr>
+<tr>
+<td><a href="../memory/return_temporary_buffer.html" title="cpp/memory/return temporary buffer">return_temporary_buffer</a>
+</td></tr>
+<tr>
+<td rowspan="5"> <a href="../error.html" title="cpp/error">错误处理</a>
+</td>
+<td><a href="../error/get_unexpected.html" title="cpp/error/get unexpected">get_unexpected</a>
+</td></tr>
+<tr>
+<td><a href="../error/set_unexpected.html" title="cpp/error/set unexpected">set_unexpected</a>
+</td></tr>
+<tr>
+<td><a href="../error/uncaught_exception.html" title="cpp/error/uncaught exception">uncaught_exception</a>
+</td></tr>
+<tr>
+<td><a href="../error/unexpected.html" title="cpp/error/unexpected">unexpected</a>
+</td></tr>
+<tr>
+<td><a href="../error/unexpected_handler.html" title="cpp/error/unexpected handler">unexpected_handler</a>
+</td></tr>
+<tr>
+<td><a href="../io/c.html" title="cpp/io/c">C风格 I/O</a>
+</td>
+<td><a href="../io/c/gets.html" title="cpp/io/c/gets">gets</a>
+</td></tr>
+<tr>
+<td rowspan="4"> <a href="../header/type_traits.html" title="cpp/header/type traits">类型特性</a>
+</td>
+<td><a href="../types/is_literal_type.html" title="cpp/types/is literal type">is_literal_type</a>
+</td></tr>
+<tr>
+<td><a href="../types/is_literal_type.html" title="cpp/types/is literal type">is_literal_type_v</a>
+</td></tr>
+<tr>
+<td><a href="../types/result_of.html" title="cpp/types/result of">result_of</a>
+</td></tr>
+<tr>
+<td><a href="../types/result_of.html" title="cpp/types/result of">result_of_t</a>
+</td></tr>
+<tr>
+<td><a href="../algorithm.html" title="cpp/algorithm">算法</a>
+</td>
+<td><a href="../algorithm/random_shuffle.html" title="cpp/algorithm/random shuffle">random_shuffle</a>
+</td></tr>
+<tr>
+<td rowspan="6"> 作为成员类型保留<br>（不得作为仿对象宏的名字在可移植代码中出现）
+</td>
+<td rowspan="3"> <span class="t-lc"><a href="../utility/functional/function.html" title="cpp/utility/functional/function">std::function</a></span>
+</td>
+<td>argument_type
+</td></tr>
+<tr>
+<td>first_argument_type
+</td></tr>
+<tr>
+<td>second_argument_type
+</td></tr>
+<tr>
+<td rowspan="3"> <span class="t-lc"><a href="../io/ios_base.html" title="cpp/io/ios base">std::ios_base</a></span>
+</td>
+<td>io_state
+</td></tr>
+<tr>
+<td>open_mode
+</td></tr>
+<tr>
+<td>seek_dir
+</td></tr>
+<tr>
+<td>作为成员函数保留<br>（不得作为仿函数宏的名字在可移植代码中出现）
+</td>
+<td><span class="t-lc"><a href="../io/basic_stringbuf.html" title="cpp/io/basic stringbuf">std::basic_stringbuf</a></span>
+</td>
+<td>stossc
+</td></tr>
+</table>
+<h3><span class="mw-headline" id=".E5.9C.A8.E8.A1.A8.E8.BE.BE.E5.BC.8F.E4.B8.AD">在表达式中</span></h3>
+<p>命名某个变量、函数<span class="t-rev-inl t-since-cxx20"><span>、<a href="constraints.html" title="cpp/language/constraints">概念</a>的特化</span> <span><span class="t-mark-rev t-since-cxx20">(C++20 起)</span></span></span>或枚举项的标识符可以作为<a href="expressions.html" title="cpp/language/expressions">表达式</a>使用。仅由这个标识符组成的表达式的结果，是该标识符所命名的实体。若该标识符命名的是某个函数、变量<span class="t-rev-inl t-since-cxx20"><span>、模板形参对象</span> <span><span class="t-mark-rev t-since-cxx20">(C++20 起)</span></span></span>或数据成员，则表达式的<a href="value_category.html" title="cpp/language/value category">值类别</a>为<i>左值</i>，否则为<i>纯右值</i>（例如<a href="enum.html" title="cpp/language/enum">枚举项</a>是纯右值表达式<span class="t-rev-inl t-since-cxx20"><span>，概念的特化是 bool 纯右值</span> <span><span class="t-mark-rev t-since-cxx20">(C++20 起)</span></span></span>）。该表达式的类型以下列方式确定：
+</p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<ul><li> 若该（无限定）标识符所命名的实体是局部实体，且在该标识符所出现的声明区之外命名它时将导致它被穿插其间的某个 <a href="lambda.html" title="cpp/language/lambda">lambda 表达式</a> 按复制俘获，则该表达式的类型是命名最内层的这种穿插其间的 lambda 表达式的闭包对象中为这种俘获所声明的非静态数据成员的<a href="operator_member_access.html" title="cpp/language/operator member access">类成员访问表达式</a>的类型。
+</li></ul>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw4">float</span> x, <span class="sy3">&amp;</span>r <span class="sy1">=</span> x<span class="sy4">;</span>
+  <span class="br0">[</span><span class="sy1">=</span><span class="br0">]</span> <span class="br0">{</span>
+    decltype<span class="br0">(</span>x<span class="br0">)</span> y1<span class="sy4">;</span>             <span class="co1">// y1 拥有 float 类型</span>
+    decltype<span class="br0">(</span><span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span> y2 <span class="sy1">=</span> y1<span class="sy4">;</span>      <span class="co1">// y2 拥有 float const&amp; 类型</span>
+                                <span class="co1">// 因为此 lambda 非 mutable 而 x 是左值</span>
+    decltype<span class="br0">(</span>r<span class="br0">)</span> r1 <span class="sy1">=</span> y1<span class="sy4">;</span>        <span class="co1">// r1 拥有 float&amp; 类型</span>
+    decltype<span class="br0">(</span><span class="br0">(</span>r<span class="br0">)</span><span class="br0">)</span> r2 <span class="sy1">=</span> y2<span class="sy4">;</span>      <span class="co1">// r2 拥有 float const&amp; 类型</span>
+  <span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<ul><li> 若所命名的实体是某个 <code>T</code> 类型模板形参的<a href="template_parameters.html#.E9.9D.9E.E7.B1.BB.E5.9E.8B.E6.A8.A1.E6.9D.BF.E5.BD.A2.E5.8F.82" title="cpp/language/template parameters">模板形参对象</a>，则表达式的类型为 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> T</span></span> 。</li></ul></td>
+
+<td><span class="t-mark-rev t-since-cxx20">(C++20 起)</span></td></tr>
+</table>
+<ul><li> 否则，表达式的类型与被命名的实体的类型相同。
+</li></ul>
+<p>在非静态<a href="member_functions.html" title="cpp/language/member functions">成员函数</a>内，命名非静态成员的每个标识符 <span class="t-c"><span class="mw-geshi cpp source-cpp">member</span></span> 都隐式变换成一个类成员访问表达式 <span class="t-c"><span class="mw-geshi cpp source-cpp">this<span class="sy2">-</span><span class="sy1">&gt;</span>member</span></span> 。
+</p>
+<h4><span class="mw-headline" id=".E6.97.A0.E9.99.90.E5.AE.9A.E7.9A.84.E6.A0.87.E8.AF.86.E7.AC.A6">无限定的标识符</span></h4>
+<p>除了适当声明了的标识符之外，以下各项也可以以相同方式用在表达式中：
+</p>
+<ul><li> 函数写法的<a href="operators.html" title="cpp/language/operators">重载运算符</a>名，比如 <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy2">+</span></span></span> 或 <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../memory/new/operator_new.html"><span class="kw687">operator new</span></a></span></span>；
+</li><li> <a href="cast_operator.html" title="cpp/language/cast operator">用户定义转换函数</a>的名字，比如 <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="kw4">bool</span></span></span>；
+</li><li> <a href="user_literal.html" title="cpp/language/user literal">用户定义字面量运算符</a>的名字，比如 <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="st0">""</span> _km</span></span>；
+</li><li> <a href="templates.html" title="cpp/language/templates">模板</a>的名字后随其实参列表，比如 <span class="t-c"><span class="mw-geshi cpp source-cpp">MyTemplate<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span></span></span>；
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">~</span></span> 字符后随类名，比如 <span class="t-c"><span class="mw-geshi cpp source-cpp">~MyClass</span></span>；
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">~</span></span> 字符后随 <a href="decltype.html" title="cpp/language/decltype">decltype</a> 说明符，比如 <span class="t-c"><span class="mw-geshi cpp source-cpp">~decltype<span class="br0">(</span>str<span class="br0">)</span></span></span>。
+</li></ul>
+<p>这些和标识符一起，被称作<i>无限定的标识表达式</i>。
+</p>
+<h4><span class="mw-headline" id=".E6.9C.89.E9.99.90.E5.AE.9A.E7.9A.84.E6.A0.87.E8.AF.86.E7.AC.A6">有限定的标识符</span></h4>
+<p><i>有限定的标识表达式</i>是在无限定的标识表达式前面带上作用域解析运算符 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy4">::</span></span></span>，以及可选地带上一系列以作用域解析运算符分隔的 <span class="t-rev-inl t-since-cxx11"><span>枚举、</span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>类或命名空间的名字<span class="t-rev-inl t-since-cxx11"><span>，或者 <span class="t-lc">decltype</span> 表达式</span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>。例如表达式 <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../string/basic_string/npos.html"><span class="kw1231">std::<span class="me2">string</span><span class="sy4">::</span><span class="me2">npos</span></span></a></span></span> 是命名在命名空间 <span class="t-c"><span class="mw-geshi cpp source-cpp">std</span></span> 内的类 <span class="t-c"><span class="mw-geshi cpp source-cpp">string</span></span> 中的静态成员 <span class="t-c"><span class="mw-geshi cpp source-cpp">npos</span></span> 的表达式。表达式 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy4">::</span><span class="me2">tolower</span></span></span> 命名的是全局命名空间内的函数 <span class="t-c"><span class="mw-geshi cpp source-cpp">tolower</span></span> 。表达式 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy4">::</span><a href="../io/cout.html"><span class="kw1758">std::<span class="me2">cout</span></span></a></span></span> 指名 <span class="t-c"><span class="mw-geshi cpp source-cpp">std</span></span> 命名空间（顶层命名空间）中的全局变量 <span class="t-c"><span class="mw-geshi cpp source-cpp">cout</span></span> 。表达式 <span class="t-c"><span class="mw-geshi cpp source-cpp">boost<span class="sy4">::</span><span class="me2">signals2</span><span class="sy4">::</span><span class="me2">connection</span></span></span> 指名的是声明于 <span class="t-c"><span class="mw-geshi cpp source-cpp">signals2</span></span> 命名空间中的类型 <span class="t-c"><span class="mw-geshi cpp source-cpp">connection</span></span> ，前者则声明于命名空间 <span class="t-c"><span class="mw-geshi cpp source-cpp">boost</span></span> 。
+</p><p>有限定标识符中，可能会需要以关键词 <a href="../keyword/template.html" title="cpp/keyword/template"><tt>template</tt></a> 来消除<a href="dependent_name.html" title="cpp/language/dependent name">待决模板名</a>的歧义。
+</p><p>关于为有限定的标识符进行的名字查找的细节，请参见<a href="qualified_lookup.html" title="cpp/language/qualified lookup">有限定的名字查找</a>。
+</p>
+<h3><span class="mw-headline" id=".E5.90.8D.E5.AD.97">名字</span></h3>
+<p><i>名字</i>是以下各项之一，用来代表某个实体或者某个标号：
+</p>
+<ul><li> 标识符；
+</li><li> 函数写法的重载运算符的名字（ <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy2">+</span></span></span> 、 <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../memory/new/operator_new.html"><span class="kw687">operator new</span></a></span></span>）；
+</li><li> 用户定义的转换函数的名字（ <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="kw4">bool</span></span></span>）；
+</li><li> 用户定义的字面量运算符的名字（ <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="st0">""</span> _km</span></span>）；
+</li><li> 模板的名字后随其实参列表（ <span class="t-c"><span class="mw-geshi cpp source-cpp">MyTemplate<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span></span></span>）。
+</li></ul>
+<p>每个代表实体的名字都是由<a href="declarations.html" title="cpp/language/declarations">声明</a>引入到程序中来的。代表标号的名字则既可以通过 <a href="goto.html" title="cpp/language/goto">goto 语句</a>，也可以通过<a href="statements.html#.E6.A0.87.E5.8F.B7" title="cpp/language/statements">带标号语句</a>引入到程序中来。在多个翻译单元中使用的相同名字，可以根据其<a href="storage_duration.html#.E8.BF.9E.E6.8E.A5" title="cpp/language/storage duration">连接</a>代表相同或者不同的实体。
+</p><p>每当编译器在程序中遇到一个未知的名字时，它就会通过进行<a href="lookup.html" title="cpp/language/lookup">名字查找</a>来将其与引入这个名字的声明联系起来，但对模板的声明和定义中的<a href="dependent_name.html" title="cpp/language/dependent name">待决名</a>不会这样做。（对于这些名字，编译器需要确定它们命名的是类型、模板还是某些其他实体，这可能需要<a href="dependent_name.html" title="cpp/language/dependent name">显式消歧义</a>）
+</p>
+<h3><span class="mw-headline" id=".E6.A0.87.E8.AF.86.E7.AC.A6.E4.B8.AD.E7.9A.84_Unicode_.E5.AD.97.E7.AC.A6">标识符中的 Unicode 字符</span></h3>
+<p>允许在标识符中使用下列 Unicode 字符范围：
+</p>
+<table class="wikitable" style="text-align:center; font-size:75%; max-width:90em;">
+
+<tr>
+<th> 代码点
+</th>
+<th> 说明
+</th>
+<th> 字符
+</th></tr>
+<tr>
+<td>U+00A8
+</td>
+<td>分音符
+</td>
+<td><code>¨</code>
+</td></tr>
+<tr>
+<td>U+00AA
+</td>
+<td>阴性顺序指示符
+</td>
+<td><code>ª</code>
+</td></tr>
+<tr>
+<td>U+00AD
+</td>
+<td>软连字符
+</td>
+<td><code>­</code>
+</td></tr>
+<tr>
+<td>U+00AF
+</td>
+<td>长音符
+</td>
+<td><code>¯</code>
+</td></tr>
+<tr>
+<td>U+00B2 - U+00B5
+</td>
+<td>上标二 - 微符
+</td>
+<td><code>²³´µ</code>
+</td></tr>
+<tr>
+<td>U+00B7 - U+00BA
+</td>
+<td>中间点 - 阳性顺序指示符
+</td>
+<td><code>·¸¹º</code>
+</td></tr>
+<tr>
+<td>U+00BC - U+00BE
+</td>
+<td>普通分数四分之一 - 普通分数四分之三
+</td>
+<td><code>¼½¾</code>
+</td></tr>
+<tr>
+<td>U+00C0 - U+00D6
+</td>
+<td>带抑音符的拉丁文大写字母 A - 带分音符的拉丁文大写字母 O
+</td>
+<td><code>ÀÁÂ...ÔÕÖ</code>
+</td></tr>
+<tr>
+<td>U+00D8 - U+00F6
+</td>
+<td>带粗线的拉丁文大写字母 O - 带分音符的拉丁文小写字母 O
+</td>
+<td><code>ØÙÚ...ôõö</code>
+</td></tr>
+<tr>
+<td>U+00F8 - U+167F
+</td>
+<td>带粗线的拉丁文小写字母 O - 加拿大印第安方言领音 W (阿尔滚琴语)
+</td>
+<td><code>øùú...ᙽᙾᙿ</code>
+</td></tr>
+<tr>
+<td>U+1681 - U+180D
+</td>
+<td>欧甘文字母 Beith - 蒙古语自由变体选择符三
+</td>
+<td><code>ᚁᚂᚃ...᠋᠌᠍</code>
+</td></tr>
+<tr>
+<td>U+180F - U+1FFE
+</td>
+<td>叙利亚文字母 Beth - 希腊文 Dasia
+</td>
+<td><code>᠏ܒܓ...´῾🿾</code>
+</td></tr>
+<tr>
+<td>U+200B - U+200D
+</td>
+<td>零宽间隔 - 零宽连接符
+</td>
+<td><code>​‌‍</code>
+</td></tr>
+<tr>
+<td>U+202A - U+202E
+</td>
+<td>从左至右嵌入 - 从右至左强制
+</td>
+<td><code></code>
+</td></tr>
+<tr>
+<td>U+203F - U+2040
+</td>
+<td>下连接 - 字符连接
+</td>
+<td><code>‿⁀</code>
+</td></tr>
+<tr>
+<td>U+2054
+</td>
+<td>竖翻下连接
+</td>
+<td><code>⁔</code>
+</td></tr>
+<tr>
+<td>U+2060 - U+218F
+</td>
+<td>文字连接符 - 倒转数字三
+</td>
+<td><code>...↉↊↋</code>
+</td></tr>
+<tr>
+<td>U+2460 - U+24FF
+</td>
+<td>带圆圈数字一 - 反白带圆圈数字〇
+</td>
+<td><code>①②③...⓽⓾⓿</code>
+</td></tr>
+<tr>
+<td>U+2776 - U+2793
+</td>
+<td>丁贝符反白带圆圈数字一 - 丁贝符反白带圆圈无衬线数字十
+</td>
+<td><code>❶❷❸...➑➒➓</code>
+</td></tr>
+<tr>
+<td>U+2C00 - U+2DFF
+</td>
+<td>格来哥里大写字母 Azu - 组合用西里尔文字母 lota 化的大 Yus
+</td>
+<td><code>ⰀⰁⰂ...</code>
+</td></tr>
+<tr>
+<td>U+2E80 - U+2FFF
+</td>
+<td>中日韩字根重复 - 象形字重叠结构
+</td>
+<td><code>⺀⺁⺂...⿹⿺⿻</code>
+</td></tr>
+<tr>
+<td>U+3004 - U+3007
+</td>
+<td>日本工业标准符号 - 象形字数字 0
+</td>
+<td><code>〄々〆〇</code>
+</td></tr>
+<tr>
+<td>U+3021 - U+302F
+</td>
+<td>杭州数字（苏州码子）一 - 朝鲜文双点音调标志
+</td>
+<td><code>〡〢〣...</code>
+</td></tr>
+<tr>
+<td>U+3031 - U+D7FF
+</td>
+<td>竖假名重复标志 - 朝鲜文 PHIEUPH-THIEUTH
+</td>
+<td><code>...</code>
+</td></tr>
+<tr>
+<td>U+F900 - U+FD3D
+</td>
+<td>中日韩兼容象形文字-F900 - 带 Fathatan 独立形式的阿拉伯文连字 Alef
+</td>
+<td><code>豈更車...ﴻﴼﴽ</code>
+</td></tr>
+<tr>
+<td>U+FD40 - U+FDCF
+</td>
+<td>带 Jeem 的阿拉伯文连字 Te，还带有 Meem 词首形式 -<br>带 Jeem 的阿拉伯文连字 Noon，还带有 Yeh 词尾形式
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+FDF0 - U+FE44
+</td>
+<td>阿拉伯文连字 Salla 用于可兰经的句号标记独立形式 -<br>变形显现形式垂直右空心角括号
+</td>
+<td><code>...﹂﹃﹄</code>
+</td></tr>
+<tr>
+<td>U+FE47 - U+FFFD
+</td>
+<td>变形显现形式垂直左方括号 - 替换字符
+</td>
+<td><code>﹇﹈﹉...￻￼�</code>
+</td></tr>
+<tr>
+<td>U+10000 - U+1FFFD
+</td>
+<td>线性文字 B 音节 B008 A - 楔形奶酪 (U+1F9C0)
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+20000 - U+2FFFD
+</td>
+<td>&lt;中日韩象形文字扩展 B ， 第一个&gt; - 中日韩兼容象形文字-2FA1D (U+2FA1D)
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+30000 - U+3FFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+40000 - U+4FFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+50000 - U+5FFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+60000 - U+6FFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+70000 - U+7FFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+80000 - U+8FFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+90000 - U+9FFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+A0000 - U+AFFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+B0000 - U+BFFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+C0000 - U+CFFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+D0000 - U+DFFFD
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+E0000 - U+EFFFD
+</td>
+<td>语言标记 (U+E0001) - 变体选择符-256 (U+E01EF)
+</td>
+<td>
+</td></tr></table>
+<p><br>
+不允许以下列 Unicode 字符的范围为标识符的开头：
+</p>
+<table class="wikitable" style="text-align:center; font-size:85%; max-width:90em;">
+
+<tr>
+<th> 代码点
+</th>
+<th> 说明
+</th>
+<th> 字符
+</th></tr>
+<tr>
+<td>U+0300 - U+036F
+</td>
+<td>组合用抑音符 - 组合用拉丁文小写字母 X
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+1DC0 - U+1DFF
+</td>
+<td>组合用带点抑音符 - 组合用下右箭头尖和向下箭头尖
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+20D0 - U+20FF
+</td>
+<td>组合用上左鱼叉 - 组合用上星号
+</td>
+<td>
+</td></tr>
+<tr>
+<td>U+FE20 - U+FE2F
+</td>
+<td>组合用连字左半 - 组合用西里尔文 Titlo 右半
+</td>
+<td>
+</td></tr>
+</table>
+<h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
+<table class="t-dsc-begin">
+
+</table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 2573/1000000
+Preprocessor generated node count: 5907/1000000
+Post‐expand include size: 41334/2097152 bytes
+Template argument size: 7504/2097152 bytes
+Highest expansion depth: 13/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:7784-0!*!0!!zh!*!zh!* and timestamp 20200708094429 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    来自“<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/language/identifiers&amp;oldid=67274">https://zh.cppreference.com/mwiki/index.php?title=cpp/language/identifiers&amp;oldid=67274</a>”                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/cpp/language/identifiers">Online version</a></li><li>Offline version retrieved 2020-08-17 00:00.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2020年7月8日 (星期三) 00:31。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过14,796次。</li>
+                            </ul>
+                    </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="../../../common/skin_scripts.js"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.MathJax","ext.gadget.ColiruCompiler"], null, true);
+}</script>
+<script src="../../../common/site_scripts.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.070 secs. -->
+	</body>
+<!-- Cached 20200708103716 -->
+</html>
