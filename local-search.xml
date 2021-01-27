@@ -4,19 +4,6 @@
   
   
   <entry>
-    <title>test</title>
-    <link href="/test/"/>
-    <url>/test/</url>
-    
-    <content type="html"><![CDATA[<h1 id="1234sdgfgkjh"><a href="#1234sdgfgkjh" class="headerlink" title="1234sdgfgkjh"></a>1234sdgfgkjh</h1><p>1234</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Hadoop集群搭建教程</title>
     <link href="/Hadoop%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
     <url>/Hadoop%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
